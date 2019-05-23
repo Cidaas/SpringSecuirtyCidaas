@@ -24,7 +24,7 @@ git clone https://github.com/Cidaas/SpringSecuirtyCidaas.git
 ```
 ## Usage
 
-Create a ``applicationContext-security.xml`` file in your project configuration folder.
+>Create a ``applicationContext-security.xml`` file in your project configuration folder.
 Add the following code into the ``applicationContext-security.xml`` file.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,7 +78,7 @@ Add the following code into the ``applicationContext-security.xml`` file.
 
 ```
 
-Create a ``applicationContext.xml`` file in your project configuration folder.
+>Create a ``applicationContext.xml`` file in your project configuration folder.
 Add the following code into the ``applicationContext.xml`` file.
 applicationContext-security.xml file is initiated in this file only.
 ```xml
@@ -128,7 +128,7 @@ applicationContext-security.xml file is initiated in this file only.
 
 ```
 
-Create a ``services-context.xml`` file in your project configuration folder.
+>Create a ``services-context.xml`` file in your project configuration folder.
 Add the following code into the ``services-context.xml`` file.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -172,7 +172,7 @@ Add the following code into the ``services-context.xml`` file.
 
 ## Property configuration: 
 
-Create a `cidaas_config.properties` file inside `resources/properties/conf` directory 
+>Create a `cidaas_config.properties` file inside `resources/properties/conf` directory 
 
 ```
 base_url=https://<cidaas-base-url>
