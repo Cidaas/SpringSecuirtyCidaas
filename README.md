@@ -1,14 +1,28 @@
-Setup your rest service project
+# Getting Started!
+To get started you can simply clone the **_SpringSecuirtyCidaas_** repository and install the dependencies.
+## Prerequisites
+You need git to clone the **_SpringSecuirtyCidaas_** repository. You can get git from [_here_](https://git-scm.com/)
 
-Add the following dependency in your pom.xml
+You must have JAVA and its package manager \(maven\) installed. You can get them from [_JAVA here_](https://java.com/en/download/) and [_MAVEN here_](https://maven.apache.org/install.html).
+## Clone SpringSecuirtyCidaas
+Clone the **_SpringSecuirtyCidaas_** repository using git:
+```
+git clone https://github.com/Cidaas/SpringSecuirtyCidaas.git
 
+```
+
+## Add the cidaas spring security xml interceptor 
+```
+ <!-- add the following dependency in pom.xml --> 
+ 
 <dependency>
-			<groupId>de.cidaas</groupId>
-			<artifactId>cidaas-interceptor-spring-security-xml</artifactId>
-			<version>0.0.1</version>
+	<groupId>de.cidaas</groupId>
+	<artifactId>cidaas-interceptor-spring-security-xml</artifactId>
+	<version>0.0.1</version>
 </dependency>
 
-Usage : 
+```
+## Usage
 
 Create a ``applicationContext-security.xml`` file in your project configuration folder.
 Add the following code into the ``applicationContext-security.xml`` file.
@@ -28,13 +42,11 @@ Add the following code into the ``applicationContext-security.xml`` file.
 		entry-point-ref="entryPoint" use-expressions="true">
 			
 		<intercept-url pattern="/v1/**" access="isAuthenticated()" />
-		<intercept-url pattern="/public/calendar"  access="permitAll" />
-		<intercept-url pattern="/leavetype" method="OPTIONS" access="denyAll()" />
 		<intercept-url pattern="/myprofile" access="isAuthenticated()" />
 		<intercept-url pattern="/api/employeelist" access="hasRole('HR')" />
 		<intercept-url pattern="/api/holidaylist" access="hasAuthority('holidaylist:read')" />
 		
-
+                <!-- Use @PermitAll & @DenyAll annotations in service level to perform the PermitAll & DenyAll operations for corresponding service-->
 		<custom-filter ref="optionsFilter" before="BASIC_AUTH_FILTER" />
 		<custom-filter ref="tokenFilter" after="BASIC_AUTH_FILTER" />
 		<csrf disabled="true" />
@@ -158,10 +170,12 @@ Add the following code into the ``services-context.xml`` file.
 </beans>
 ```
 
-Property configuration: 
+## Property configuration: 
 
 Create a `cidaas_config.properties` file inside `resources/properties/conf` directory 
 
-base_url=https://<cidaas-base-url>.cidaas.de
+```
+base_url=https://<cidaas-base-url>
 client_id=<non-interactive-app-client-id>
 client_secret=<non-interactive-app-client-secret>
+```
