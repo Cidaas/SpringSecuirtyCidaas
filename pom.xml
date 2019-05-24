@@ -260,7 +260,7 @@
 		<dependency>
 			<groupId>de.cidaas</groupId>
 			<artifactId>cidaas-interceptor-spring-security</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.michir</groupId>
