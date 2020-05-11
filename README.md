@@ -1,13 +1,16 @@
-# Getting Started!
-To get started you can simply clone the **_SpringSecuirtyCidaas_** repository and install the dependencies.
+# About this project
+This is an example project for the cidaas-interceptor-spring-security-xml (Interceptor with xml configuration).  
+If you don't want to xml for the interceptor configuration, you can use the https://github.com/Cidaas/cidaas-interceptor-spring-security instead.
+## Getting Started!
+To get started you can simply clone the **_cidaas-interceptor-spring-security-xml-example_** repository and install the dependencies.
 ## Prerequisites
-You need git to clone the **_SpringSecuirtyCidaas_** repository. You can get git from [_here_](https://git-scm.com/)
+You need git to clone the **_cidaas-interceptor-spring-security-xml-example_** repository. You can get git from [_here_](https://git-scm.com/)
 
 You must have JAVA and its package manager \(maven\) installed. You can get them from [_JAVA here_](https://java.com/en/download/) and [_MAVEN here_](https://maven.apache.org/install.html).
 ## Clone SpringSecuirtyCidaas
-Clone the **_SpringSecuirtyCidaas_** repository using git:
+Clone the **_cidaas-interceptor-spring-security-xml-example_** repository using git:
 ```
-git clone https://github.com/Cidaas/SpringSecuirtyCidaas.git
+git clone https://github.com/Cidaas/cidaas-interceptor-spring-security-xml-example.git
 
 ```
 
