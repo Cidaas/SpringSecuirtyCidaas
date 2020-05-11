@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.cidaas</groupId>
-	<artifactId>SpringSecuirtyCidaas</artifactId>
+	<artifactId>SpringSecurityCidaas</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringSecuirtyCidaas Maven Webapp</name>
+	<name>SpringSecurityCidaas Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<build>
-		<finalName>SpringSecuirtyCidaas</finalName>
+		<finalName>SpringSecurityCidaas</finalName>
 	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,7 @@
 		<httpclient.version>4.3.3</httpclient.version>
 		<rest-assured.version>2.3.1</rest-assured.version>
 		<maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -140,7 +140,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jdk8</artifactId>
-			<version>2.9.8</version>
+			<version>[2.9.9.2,)</version>
 		</dependency>
 
 
@@ -149,7 +149,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.9.8</version>
+			<version>[2.9.9.2,)</version>
 		</dependency>
 
 		<!-- util -->
@@ -257,16 +257,8 @@
 			<artifactId>gson</artifactId>
 			<version>2.6.2</version>
 		</dependency>
-		<dependency>
-			<groupId>de.cidaas</groupId>
-			<artifactId>cidaas-interceptor-spring-security</artifactId>
-			<version>0.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>net.michir</groupId>
-			<artifactId>spring-security-keycloak</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -287,7 +279,7 @@
 		<dependency>
 			<groupId>de.cidaas</groupId>
 			<artifactId>cidaas-interceptor-spring-security-xml</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
