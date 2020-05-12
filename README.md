@@ -1,13 +1,12 @@
 # About this project
-This is an example project for the cidaas-interceptor-spring-security-xml (Interceptor with xml configuration).  
-If you don't want to xml for the interceptor configuration, you can use the https://github.com/Cidaas/cidaas-interceptor-spring-security instead.
+This is the example project for the cidaas-interceptor-spring-security-xml (Interceptor with xml configuration).  
+If you don't want to configure the interceptor with xml, you can use the https://github.com/Cidaas/cidaas-interceptor-spring-security instead.
 ## Getting Started!
 To get started you can simply clone the **_cidaas-interceptor-spring-security-xml-example_** repository and install the dependencies.
-## Prerequisites
-You need git to clone the **_cidaas-interceptor-spring-security-xml-example_** repository. You can get git from [_here_](https://git-scm.com/)
 
-You must have JAVA and its package manager \(maven\) installed. You can get them from [_JAVA here_](https://java.com/en/download/) and [_MAVEN here_](https://maven.apache.org/install.html).
-## Clone SpringSecuirtyCidaas
+You must have JAVA and its package manager \(maven\) installed. You can get them from [_JAVA here_](https://java.com/en/download/) and [_MAVEN here_](https://maven.apache.org/install.html).  
+  
+## Clone the cidaas-interceptor-spring-security-xml-example project
 Clone the **_cidaas-interceptor-spring-security-xml-example_** repository using git:
 ```
 git clone https://github.com/Cidaas/cidaas-interceptor-spring-security-xml-example.git
@@ -27,8 +26,7 @@ git clone https://github.com/Cidaas/cidaas-interceptor-spring-security-xml-examp
 ```
 ## Usage
 
->Create a ``applicationContext-security.xml`` file in your project configuration folder.
-Add the following code into the ``applicationContext-security.xml`` file.
+> The applicationContext-security.xml defines which and how your endpoints should be secured:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
@@ -81,9 +79,7 @@ Add the following code into the ``applicationContext-security.xml`` file.
 
 ```
 
->Create a ``applicationContext.xml`` file in your project configuration folder.
-Add the following code into the ``applicationContext.xml`` file.
-applicationContext-security.xml file is initiated in this file only.
+> In the ``applicationContext.xml`` the applicationContext-security.xml is imported.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -133,10 +129,13 @@ applicationContext-security.xml file is initiated in this file only.
 
 ## Property configuration: 
 
->Create a `cidaas_config.properties` file inside `resources/properties/conf` directory 
+>The necessary configuration for cidaas is defined in the `cidaas_config.properties` file inside the `resources/properties/conf` directory 
 
 ```
 base_url=https://<cidaas-base-url>
 client_id=<non-interactive-app-client-id>
 client_secret=<non-interactive-app-client-secret>
 ```
+  
+To test this, you need to create an app in your cidaas admin dashboard. To test the client-crendentials flow you just need to copy the generated client_id and secret into the `cidaas_config.properties` file and adjuste the base_url.  
+If you have more questions about cidaas, please refer to [the cidaas documentation](https://docs.cidaas.de).
