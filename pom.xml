@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.cidaas</groupId>
-	<artifactId>SpringSecurityCidaas</artifactId>
+	<artifactId>cidaas-interceptor-spring-security-xml-example</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringSecurityCidaas Maven Webapp</name>
+	<name>cidaas-interceptor-spring-security-xml-example Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<build>
-		<finalName>SpringSecurityCidaas</finalName>
+		<finalName>cidaas-interceptor-spring-security-xml-example</finalName>
 	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
